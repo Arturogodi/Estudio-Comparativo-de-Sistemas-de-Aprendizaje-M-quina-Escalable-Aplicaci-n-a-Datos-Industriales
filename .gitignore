@@ -1,6 +1,7 @@
 # Excluye todo por defecto
 *
-
+!scripts/
+!scripts/**
 # Excluye archivos temporales
 __pycache__/
 *.py[cod]
