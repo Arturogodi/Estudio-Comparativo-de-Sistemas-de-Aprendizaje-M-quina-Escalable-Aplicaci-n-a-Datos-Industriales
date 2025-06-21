@@ -34,18 +34,45 @@ __pycache__/
 .env
 .venv/
 env/
+# Excluir archivos de entorno virtual
 venv/
+env/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Excluir archivos generados
 .vscode/
 *.log
 *.db
 *.sqlite
 .DS_Store
 
-# Excluye archivos específicos
-scripts/data/
-scripts/utils/__pycache__/
+# Excluir contenido de data/bronze y data/silver
+/data/bronze/*
+!data/bronze/
+/data/silver/*
+!data/silver/
 
-# Excluye archivos de entorno virtual
-!venv/
-!env/
-!.venv/
+# Excluir contenido de data/gold excepto el archivo específico
+/data/gold/*
+!data/gold/
+!data/gold/amazon2023/amzn23_model_data.parquet
