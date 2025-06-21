@@ -1,32 +1,6 @@
 # Excluye todo por defecto
 *
 
-# Permite estos archivos y carpetas específicas
-!data/
-!data/bronze/
-!data/silver/
-!data/gold/
-!data/images/
-!data/metrics/
-!data/metrics_dask/
-!data/metrics_ray/
-!data/report/
-!data/state/
-
-!scripts/
-!scripts/Ray/
-!scripts/Spark/
-!scripts/Dask/
-!scripts/root/
-
-!configs/
-!*.yml
-!requirements.txt
-
-# Permite archivos específicos
-!README.md
-!.gitignore
-
 # Excluye archivos temporales
 __pycache__/
 *.py[cod]
