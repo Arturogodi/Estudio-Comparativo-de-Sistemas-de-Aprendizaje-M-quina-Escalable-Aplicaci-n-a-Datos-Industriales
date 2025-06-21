@@ -1,0 +1,48 @@
+# Imagen base con Python 3.9.13
+FROM python:3.9.13-slim
+
+# Evitar prompts en apt-get
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Instalamos Java (Spark necesita al menos Java 8, aquí ponemos Java 11 que es muy estable)
+RUN apt-get update && apt-get install -y \
+    openjdk-11-jdk \
+    wget \
+    curl \
+    procps \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Variables de entorno para Java
+ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+ENV PATH=$JAVA_HOME/bin:$PATH
+
+# Definir versión de Spark y Hadoop
+ENV SPARK_VERSION=3.5.5
+ENV HADOOP_VERSION=3
+
+# Variables de entorno para Spark
+ENV SPARK_HOME=/opt/spark
+ENV PATH=$SPARK_HOME/bin:$PATH
+
+# Descargamos y descomprimimos Spark
+RUN wget https://archive.apache.org/dist/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz && \
+    tar -xzf spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz -C /opt && \
+    mv /opt/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION} /opt/spark && \
+    rm spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz
+
+# Instalamos PySpark en la misma versión que Spark
+RUN pip install pyspark==${SPARK_VERSION}
+
+
+# Soporte Prometheus Dropwizard y Servlet
+RUN wget -P /opt/spark/jars https://repo1.maven.org/maven2/io/prometheus/simpleclient/0.12.0/simpleclient-0.12.0.jar && \
+    wget -P /opt/spark/jars https://repo1.maven.org/maven2/io/prometheus/simpleclient_dropwizard/0.12.0/simpleclient_dropwizard-0.12.0.jar && \
+    wget -P /opt/spark/jars https://repo1.maven.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent/0.20.0/jmx_prometheus_javaagent-0.20.0.jar
+
+# Por si quieres añadir algún otro paquete Python
+RUN pip install pandas numpy
+RUN pip install pyyaml psutil matplotlib seaborn
+
+# Por si quieres que se quede esperando para poder conectarte (como hicimos con Ray)
+CMD ["/opt/spark/bin/spark-class", "org.apache.spark.deploy.master.Master"]

@@ -1,0 +1,246 @@
+file,folder,run,dataset,category,time_seconds
+07_Read_Filter_report.md,report,[Run 1],Read_Filter Ray - Run 1,ETL Read_Filter Ray,13.82
+07_Read_Filter_report.md,report,[Run 2],Read_Filter Ray - Run 2,ETL Read_Filter Ray,13.9
+07_Read_Filter_report.md,report,[Run 3],Read_Filter Ray - Run 3,ETL Read_Filter Ray,14.34
+07_Read_Filter_report.md,report,[Run 4],Read_Filter Ray - Run 4,ETL Read_Filter Ray,13.37
+07_Read_Filter_report.md,report,[Run 5],Read_Filter Ray - Run 5,ETL Read_Filter Ray,13.95
+07_Read_Filter_Write_report.md,report,[Run 1],Read_Filter Ray - Run 1,ETL Read_Filter Ray,38.79
+07_Read_Filter_Write_report.md,report,[Run 2],Read_Filter Ray - Run 2,ETL Read_Filter Ray,33.68
+07_Read_Filter_Write_report.md,report,[Run 3],Read_Filter Ray - Run 3,ETL Read_Filter Ray,39.33
+07_Read_Filter_Write_report.md,report,[Run 4],Read_Filter Ray - Run 4,ETL Read_Filter Ray,37.88
+07_Read_Filter_Write_report.md,report,[Run 5],Read_Filter Ray - Run 5,ETL Read_Filter Ray,38.19
+02_AMZN23_ETLs_Clean_Join_Gold_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\02_AMZN23_ETLs_Clean_Join_Gold,[Run 1],ETL Join Meta + Reviews,ETL Clean Join,362.7
+02_AMZN23_ETLs_Clean_Join_Gold_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\02_AMZN23_ETLs_Clean_Join_Gold,[Run 2],ETL Join Meta + Reviews,ETL Clean Join,359.96
+02_AMZN23_ETLs_Clean_Join_Gold_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\02_AMZN23_ETLs_Clean_Join_Gold,[Run 3],ETL Join Meta + Reviews,ETL Clean Join,361.78
+02_AMZN23_ETLs_Clean_Join_Gold_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\02_AMZN23_ETLs_Clean_Join_Gold,[Run 4],ETL Join Meta + Reviews,ETL Clean Join,363.39
+02_AMZN23_ETLs_Clean_Join_Gold_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\02_AMZN23_ETLs_Clean_Join_Gold,[Run 5],ETL Join Meta + Reviews,ETL Clean Join,382.18
+03_AMZN23_ETLs_Model_Data_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\03_AMZN23_ETLs_Model_Data,[Run 1],Preprocesamiento para modelos,ETL Model Data,179.71
+03_AMZN23_ETLs_Model_Data_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\03_AMZN23_ETLs_Model_Data,[Run 2],Preprocesamiento para modelos,ETL Model Data,195.22
+03_AMZN23_ETLs_Model_Data_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\03_AMZN23_ETLs_Model_Data,[Run 3],Preprocesamiento para modelos,ETL Model Data,179.98
+03_AMZN23_ETLs_Model_Data_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\03_AMZN23_ETLs_Model_Data,[Run 4],Preprocesamiento para modelos,ETL Model Data,164.64
+03_AMZN23_ETLs_Model_Data_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\03_AMZN23_ETLs_Model_Data,[Run 5],Preprocesamiento para modelos,ETL Model Data,178.64
+04_AMZN23_ML_Kmeans_5000_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_5000,[Run 1],KMeans Clustering Sampled,ML KMeans,654.43
+04_AMZN23_ML_Kmeans_5000_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_5000,[Run 2],KMeans Clustering Sampled,ML KMeans,668.39
+04_AMZN23_ML_Kmeans_5000_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_5000,[Run 3],KMeans Clustering Sampled,ML KMeans,693.57
+04_AMZN23_ML_Kmeans_5000_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_5000,[Run 4],KMeans Clustering Sampled,ML KMeans,673.39
+04_AMZN23_ML_Kmeans_5000_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_5000,[Run 5],KMeans Clustering Sampled,ML KMeans,701.04
+04_AMZN23_ML_Kmeans_parquet_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet,[Run 1],KMeans Clustering Amazon23,ML KMeans,2129.04
+04_AMZN23_ML_Kmeans_parquet_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet,[Run 2],KMeans Clustering Amazon23,ML KMeans,2391.76
+04_AMZN23_ML_Kmeans_parquet_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet,[Run 3],KMeans Clustering Amazon23,ML KMeans,2241.19
+04_AMZN23_ML_Kmeans_parquet_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet,[Run 4],KMeans Clustering Amazon23,ML KMeans,2944.39
+04_AMZN23_ML_Kmeans_parquet_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet,[Run 5],KMeans Clustering Amazon23,ML KMeans,3185.36
+07_Read_Filter_D_report.md,report,[Run 1],Unknown - Run 1,Unknown,15.53
+07_Read_Filter_D_report.md,report,[Run 1],Unknown - Run 1,Unknown,15.53
+07_Read_Filter_D_report.md,report,[Run 2],Unknown - Run 2,Unknown,14.69
+07_Read_Filter_D_report.md,report,[Run 2],Unknown - Run 2,Unknown,14.69
+07_Read_Filter_D_report.md,report,[Run 3],Unknown - Run 3,Unknown,16.81
+07_Read_Filter_D_report.md,report,[Run 3],Unknown - Run 3,Unknown,16.81
+07_Read_Filter_D_report.md,report,[Run 4],Unknown - Run 4,Unknown,15.41
+07_Read_Filter_D_report.md,report,[Run 4],Unknown - Run 4,Unknown,15.41
+07_Read_Filter_D_report.md,report,[Run 5],Unknown - Run 5,Unknown,16.99
+07_Read_Filter_D_report.md,report,[Run 5],Unknown - Run 5,Unknown,16.99
+07_Read_Filter_Write_D_report.md,report,[Run 1],Unknown - Run 1,Unknown,20.08
+07_Read_Filter_Write_D_report.md,report,[Run 1],Unknown - Run 1,Unknown,20.08
+07_Read_Filter_Write_D_report.md,report,[Run 2],Unknown - Run 2,Unknown,21.78
+07_Read_Filter_Write_D_report.md,report,[Run 2],Unknown - Run 2,Unknown,21.78
+07_Read_Filter_Write_D_report.md,report,[Run 3],Unknown - Run 3,Unknown,26.87
+07_Read_Filter_Write_D_report.md,report,[Run 3],Unknown - Run 3,Unknown,26.87
+07_Read_Filter_Write_D_report.md,report,[Run 4],Unknown - Run 4,Unknown,23.5
+07_Read_Filter_Write_D_report.md,report,[Run 4],Unknown - Run 4,Unknown,23.5
+07_Read_Filter_Write_D_report.md,report,[Run 5],Unknown - Run 5,Unknown,24.08
+07_Read_Filter_Write_D_report.md,report,[Run 5],Unknown - Run 5,Unknown,24.08
+07_Read_Filter_Write_R_report.md,report,[Run 1],Unknown - Run 1,Unknown,3.68
+07_Read_Filter_Write_R_report.md,report,[Run 1],Unknown - Run 1,Unknown,3.68
+07_Read_Filter_Write_R_report.md,report,[Run 2],Unknown - Run 2,Unknown,6.37
+07_Read_Filter_Write_R_report.md,report,[Run 2],Unknown - Run 2,Unknown,6.37
+07_Read_Filter_Write_R_report.md,report,[Run 3],Unknown - Run 3,Unknown,3.16
+07_Read_Filter_Write_R_report.md,report,[Run 3],Unknown - Run 3,Unknown,3.16
+07_Read_Filter_Write_R_report.md,report,[Run 4],Unknown - Run 4,Unknown,3.3
+07_Read_Filter_Write_R_report.md,report,[Run 4],Unknown - Run 4,Unknown,3.3
+07_Read_Filter_Write_R_report.md,report,[Run 5],Unknown - Run 5,Unknown,3.66
+07_Read_Filter_Write_R_report.md,report,[Run 5],Unknown - Run 5,Unknown,3.66
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 1],reviews_Books.parquet,Meta,223.43
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 1],reviews_Clothing_Shoes_and_Jewelry.parquet,Meta,254.05
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 1],reviews_Electronics.parquet,Meta,205.23
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 1],reviews_Home_and_Kitchen.parquet,Meta,294.07
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 1],reviews_Toys_and_Games.parquet,Meta,59.44
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 2],reviews_Books.parquet,Meta,210.81
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 2],reviews_Clothing_Shoes_and_Jewelry.parquet,Meta,250.7
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 2],reviews_Electronics.parquet,Meta,192.7
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 2],reviews_Home_and_Kitchen.parquet,Meta,273.81
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 2],reviews_Toys_and_Games.parquet,Meta,58.38
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 3],reviews_Books.parquet,Meta,207.11
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 3],reviews_Clothing_Shoes_and_Jewelry.parquet,Meta,251.23
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 3],reviews_Electronics.parquet,Meta,207.3
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 3],reviews_Home_and_Kitchen.parquet,Meta,281.9
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 3],reviews_Toys_and_Games.parquet,Meta,60.43
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 4],reviews_Books.parquet,Meta,222.14
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 4],reviews_Clothing_Shoes_and_Jewelry.parquet,Meta,241.68
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 4],reviews_Electronics.parquet,Meta,198.42
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 4],reviews_Home_and_Kitchen.parquet,Meta,271.06
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 4],reviews_Toys_and_Games.parquet,Meta,65.22
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 5],reviews_Books.parquet,Meta,220.46
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 5],reviews_Clothing_Shoes_and_Jewelry.parquet,Meta,253.17
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 5],reviews_Electronics.parquet,Meta,202.98
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 5],reviews_Home_and_Kitchen.parquet,Meta,290.66
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 5],reviews_Toys_and_Games.parquet,Meta,62.35
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 1],reviews_Books_normalized.parquet,EDA,255.62
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 1],reviews_Clothing_Shoes_and_Jewelry_normalized.parquet,EDA,248.88
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 1],reviews_Electronics_normalized.parquet,EDA,204.71
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 1],reviews_Home_and_Kitchen_normalized.parquet,EDA,279.55
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 1],reviews_Toys_and_Games_normalized.parquet,EDA,76.11
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 2],reviews_Books_normalized.parquet,EDA,236.54
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 2],reviews_Clothing_Shoes_and_Jewelry_normalized.parquet,EDA,239.26
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 2],reviews_Electronics_normalized.parquet,EDA,204.14
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 2],reviews_Home_and_Kitchen_normalized.parquet,EDA,256.39
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 2],reviews_Toys_and_Games_normalized.parquet,EDA,73.57
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 3],reviews_Books_normalized.parquet,EDA,240.55
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 3],reviews_Clothing_Shoes_and_Jewelry_normalized.parquet,EDA,233.02
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 3],reviews_Electronics_normalized.parquet,EDA,202.72
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 3],reviews_Home_and_Kitchen_normalized.parquet,EDA,278.05
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 3],reviews_Toys_and_Games_normalized.parquet,EDA,76.74
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 4],reviews_Books_normalized.parquet,EDA,230.8
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 4],reviews_Clothing_Shoes_and_Jewelry_normalized.parquet,EDA,227.15
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 4],reviews_Electronics_normalized.parquet,EDA,194.53
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 4],reviews_Home_and_Kitchen_normalized.parquet,EDA,255.46
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 4],reviews_Toys_and_Games_normalized.parquet,EDA,71.49
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 5],reviews_Books_normalized.parquet,EDA,246.94
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 5],reviews_Clothing_Shoes_and_Jewelry_normalized.parquet,EDA,244.13
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 5],reviews_Electronics_normalized.parquet,EDA,212.44
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 5],reviews_Home_and_Kitchen_normalized.parquet,EDA,267.8
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 5],reviews_Toys_and_Games_normalized.parquet,EDA,75.32
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 1],meta_Books.parquet,,237.08
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 1],meta_Clothing_Shoes_and_Jewelry.parquet,,175.86
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 1],meta_Electronics.parquet,,55.91
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 1],meta_Home_and_Kitchen.parquet,,119.65
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 1],meta_Toys_and_Games.parquet,,27.21
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 2],,,616.97
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 2],meta_Books.parquet,,245.29
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 2],meta_Clothing_Shoes_and_Jewelry.parquet,,178.16
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 2],meta_Electronics.parquet,,57.98
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 2],meta_Home_and_Kitchen.parquet,,121.06
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 2],meta_Toys_and_Games.parquet,,29.24
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 3],,,632.98
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 3],meta_Books.parquet,,255.59
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 3],meta_Clothing_Shoes_and_Jewelry.parquet,,185.97
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 3],meta_Electronics.parquet,,61.57
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 3],meta_Home_and_Kitchen.parquet,,120.25
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 3],meta_Toys_and_Games.parquet,,27.19
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 4],,,651.82
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 4],meta_Books.parquet,,256.74
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 4],meta_Clothing_Shoes_and_Jewelry.parquet,,184.31
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 4],meta_Electronics.parquet,,56.31
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 4],meta_Home_and_Kitchen.parquet,,127.96
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 4],meta_Toys_and_Games.parquet,,29.56
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 5],,,655.96
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 5],meta_Books.parquet,,260.09
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 5],meta_Clothing_Shoes_and_Jewelry.parquet,,183.7
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 5],meta_Electronics.parquet,,59.6
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 5],meta_Home_and_Kitchen.parquet,,132.44
+00_AMZN23_A_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_A_Normalization_Preprocess_all_files,[Run 5],meta_Toys_and_Games.parquet,,29.29
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 1],meta_Books_normalized.parquet,EDA,210.41
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 1],meta_Clothing_Shoes_and_Jewelry_normalized.parquet,EDA,123.23
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 1],meta_Electronics_normalized.parquet,EDA,37.42
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 1],meta_Home_and_Kitchen_normalized.parquet,EDA,86.57
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 1],meta_Toys_and_Games_normalized.parquet,EDA,76.56
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 2],,EDA,535.41
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 2],meta_Books_normalized.parquet,EDA,202.3
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 2],meta_Clothing_Shoes_and_Jewelry_normalized.parquet,EDA,121.15
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 2],meta_Electronics_normalized.parquet,EDA,37.75
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 2],meta_Home_and_Kitchen_normalized.parquet,EDA,89.22
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 2],meta_Toys_and_Games_normalized.parquet,EDA,73.65
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 3],,EDA,525.39
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 3],meta_Books_normalized.parquet,EDA,189.91
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 3],meta_Clothing_Shoes_and_Jewelry_normalized.parquet,EDA,117.81
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 3],meta_Electronics_normalized.parquet,EDA,38.64
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 3],meta_Home_and_Kitchen_normalized.parquet,EDA,95.42
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 3],meta_Toys_and_Games_normalized.parquet,EDA,75.95
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 4],,EDA,518.85
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 4],meta_Books_normalized.parquet,EDA,213.06
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 4],meta_Clothing_Shoes_and_Jewelry_normalized.parquet,EDA,121.15
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 4],meta_Electronics_normalized.parquet,EDA,41.59
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 4],meta_Home_and_Kitchen_normalized.parquet,EDA,84.58
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 4],meta_Toys_and_Games_normalized.parquet,EDA,79.62
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 5],,EDA,541.34
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 5],meta_Books_normalized.parquet,EDA,201.47
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 5],meta_Clothing_Shoes_and_Jewelry_normalized.parquet,EDA,126.92
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 5],meta_Electronics_normalized.parquet,EDA,48.05
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 5],meta_Home_and_Kitchen_normalized.parquet,EDA,89.13
+01_AMZN23_A_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_A_EDA_all_files,[Run 5],meta_Toys_and_Games_normalized.parquet,EDA,77.1
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 1],reviews_Books.parquet,,223.43
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 1],reviews_Clothing_Shoes_and_Jewelry.parquet,,254.05
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 1],reviews_Electronics.parquet,,205.23
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 1],reviews_Home_and_Kitchen.parquet,,294.07
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 1],reviews_Toys_and_Games.parquet,,59.44
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 2],reviews_Books.parquet,,210.81
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 2],reviews_Clothing_Shoes_and_Jewelry.parquet,,250.7
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 2],reviews_Electronics.parquet,,192.7
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 2],reviews_Home_and_Kitchen.parquet,,273.81
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 2],reviews_Toys_and_Games.parquet,,58.38
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 3],reviews_Books.parquet,,207.11
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 3],reviews_Clothing_Shoes_and_Jewelry.parquet,,251.23
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 3],reviews_Electronics.parquet,,207.3
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 3],reviews_Home_and_Kitchen.parquet,,281.9
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 3],reviews_Toys_and_Games.parquet,,60.43
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 4],reviews_Books.parquet,,222.14
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 4],reviews_Clothing_Shoes_and_Jewelry.parquet,,241.68
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 4],reviews_Electronics.parquet,,198.42
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 4],reviews_Home_and_Kitchen.parquet,,271.06
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 4],reviews_Toys_and_Games.parquet,,65.22
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 5],reviews_Books.parquet,,220.46
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 5],reviews_Clothing_Shoes_and_Jewelry.parquet,,253.17
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 5],reviews_Electronics.parquet,,202.98
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 5],reviews_Home_and_Kitchen.parquet,,290.66
+00_AMZN23_B_Normalization_Preprocess_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\00_AMZN23_B_Normalization_Preprocess_all_files,[Run 5],reviews_Toys_and_Games.parquet,,62.35
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 1],reviews_Books_normalized.parquet,EDA,255.62
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 1],reviews_Clothing_Shoes_and_Jewelry_normalized.parquet,EDA,248.88
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 1],reviews_Electronics_normalized.parquet,EDA,204.71
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 1],reviews_Home_and_Kitchen_normalized.parquet,EDA,279.55
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 1],reviews_Toys_and_Games_normalized.parquet,EDA,76.11
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 2],reviews_Books_normalized.parquet,EDA,236.54
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 2],reviews_Clothing_Shoes_and_Jewelry_normalized.parquet,EDA,239.26
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 2],reviews_Electronics_normalized.parquet,EDA,204.14
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 2],reviews_Home_and_Kitchen_normalized.parquet,EDA,256.39
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 2],reviews_Toys_and_Games_normalized.parquet,EDA,73.57
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 3],reviews_Books_normalized.parquet,EDA,240.55
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 3],reviews_Clothing_Shoes_and_Jewelry_normalized.parquet,EDA,233.02
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 3],reviews_Electronics_normalized.parquet,EDA,202.72
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 3],reviews_Home_and_Kitchen_normalized.parquet,EDA,278.05
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 3],reviews_Toys_and_Games_normalized.parquet,EDA,76.74
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 4],reviews_Books_normalized.parquet,EDA,230.8
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 4],reviews_Clothing_Shoes_and_Jewelry_normalized.parquet,EDA,227.15
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 4],reviews_Electronics_normalized.parquet,EDA,194.53
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 4],reviews_Home_and_Kitchen_normalized.parquet,EDA,255.46
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 4],reviews_Toys_and_Games_normalized.parquet,EDA,71.49
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 5],reviews_Books_normalized.parquet,EDA,246.94
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 5],reviews_Clothing_Shoes_and_Jewelry_normalized.parquet,EDA,244.13
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 5],reviews_Electronics_normalized.parquet,EDA,212.44
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 5],reviews_Home_and_Kitchen_normalized.parquet,EDA,267.8
+01_AMZN23_B_EDA_all_files_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\01_AMZN23_B_EDA_all_files,[Run 5],reviews_Toys_and_Games_normalized.parquet,EDA,75.32
+05_AMZN23_ML_XGBoost_report.md,report,[Run 1],GBT Classification - Run 1,ML XGBoost,1107.87
+05_AMZN23_ML_XGBoost_report.md,report,[Run 2],GBT Classification - Run 1,ML XGBoost,1060.64
+05_AMZN23_ML_XGBoost_report.md,report,[Run 3],GBT Classification - Run 1,ML XGBoost,1089.6
+05_AMZN23_ML_XGBoost_report.md,report,[Run 4],GBT Classification - Run 1,ML XGBoost,1054.44
+05_AMZN23_ML_XGBoost_report.md,report,[Run 5],GBT Classification - Run 1,ML XGBoost,1063.03
+04_AMZN23_ML_Kmeans_5000_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_5000,[Run 1],KMeans Clustering  - Run 1,,654.43
+04_AMZN23_ML_Kmeans_5000_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_5000,[Run 2],,,654.52
+04_AMZN23_ML_Kmeans_5000_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_5000,[Run 3],KMeans Clustering  - Run 2,,668.39
+04_AMZN23_ML_Kmeans_5000_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_5000,[Run 4],,,668.47
+04_AMZN23_ML_Kmeans_5000_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_5000,[Run 5],KMeans Clustering  - Run 3,,693.57
+04_AMZN23_ML_Kmeans_parquet_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet,[Run 1],,,2163.25
+04_AMZN23_ML_Kmeans_parquet_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet,[Run 2],KMeans Clustering  - Run 1,,2129.04
+04_AMZN23_ML_Kmeans_parquet_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet,[Run 3],,,2129.36
+04_AMZN23_ML_Kmeans_parquet_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet,[Run 4],KMeans Clustering  - Run 2,,2391.76
+04_AMZN23_ML_Kmeans_parquet_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet,[Run 5],,,2392.08
+04_AMZN23_ML_Kmeans_parquet_R_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet_R,[Run 1],,,498.27
+04_AMZN23_ML_Kmeans_parquet_R_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet_R,[Run 2],,,494.41
+04_AMZN23_ML_Kmeans_parquet_Ray_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet_Ray,[Run 1],,,453.34
+04_AMZN23_ML_Kmeans_parquet_Ray_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet_Ray,[Run 2],,,452.38
+04_AMZN23_ML_Kmeans_parquet_Ray_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet_Ray,[Run 3],,,454.99
+04_AMZN23_ML_Kmeans_parquet_Ray_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet_Ray,[Run 4],,,452.35
+04_AMZN23_ML_Kmeans_parquet_Ray_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\04_AMZN23_ML_Kmeans_parquet_Ray,[Run 5],,,498.18
+05_AMZN23_ML_XGBoost_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\05_AMZN23_ML_XGBoost,[Run 1],GBT Classification - Run 1,ML XGBoost,1107.87
+05_AMZN23_ML_XGBoost_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\05_AMZN23_ML_XGBoost,[Run 2],,ML XGBoost,1108.74
+05_AMZN23_ML_XGBoost_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\05_AMZN23_ML_XGBoost,[Run 3],GBT Classification - Run 1,ML XGBoost,1060.64
+05_AMZN23_ML_XGBoost_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\05_AMZN23_ML_XGBoost,[Run 4],,ML XGBoost,1061.42
+05_AMZN23_ML_XGBoost_report.md,C:\Users\34699\Desktop\TFG-Ray-vs-Spark\data\report\05_AMZN23_ML_XGBoost,[Run 5],GBT Classification - Run 1,ML XGBoost,1089.6

@@ -1,0 +1,8 @@
+timestamp,container_id,name,cpu_perc,mem_usage,mem_perc,net_io,block_io,pids
+20250620_194813,c180cfe9ce0b,ray-client,33.92%,541.8MiB / 1GiB,52.91%,954kB / 974kB,0B / 0B,179
+20250620_194813,aa399e9c1da9,ray-worker-2,23.12%,740MiB / 10GiB,7.23%,411kB / 774kB,0B / 0B,379
+20250620_194813,cab8dd6274ec,ray-worker-3,45.07%,748.4MiB / 10GiB,7.31%,408kB / 784kB,0B / 0B,379
+20250620_194813,4ff0b6d92eb2,ray-worker-5,25.93%,765.8MiB / 10GiB,7.48%,386kB / 727kB,0B / 0B,376
+20250620_194813,a10d307fb8ef,ray-worker-4,27.54%,732.9MiB / 10GiB,7.16%,410kB / 789kB,0B / 0B,378
+20250620_194813,414b37cda463,ray-worker-1,13.09%,832.7MiB / 9GiB,9.04%,413kB / 742kB,0B / 0B,408
+20250620_194813,af1691bf74e0,ray-head,30.24%,1.613GiB / 3GiB,53.77%,4.05MB / 2.22MB,0B / 0B,522

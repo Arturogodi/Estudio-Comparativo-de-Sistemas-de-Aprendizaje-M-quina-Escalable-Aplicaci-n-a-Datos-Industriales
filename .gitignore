@@ -2,6 +2,16 @@
 *
 !scripts/
 !scripts/**
+
+!data/
+!data/**
+
+!configs/
+!configs/**
+
+!Dockerfile.ray-2.22.0-py3.9.13
+!Dockerfile.spark-3.5.5-py3.9.13
+!Dockerfile.dask
 # Excluye archivos temporales
 __pycache__/
 *.py[cod]

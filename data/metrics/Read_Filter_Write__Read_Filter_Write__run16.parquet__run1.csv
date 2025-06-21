@@ -1,0 +1,7 @@
+timestamp,container_id,name,cpu_perc,mem_usage,mem_perc,net_io,block_io,pids
+20250621_181713,89b8dcbf9be3,spark-worker-4,0.05%,229MiB / 10GiB,2.24%,6.06kB / 22.3kB,0B / 0B,32
+20250621_181713,e89cbf4842ec,spark-worker-5,0.05%,268.8MiB / 10GiB,2.63%,6kB / 22.3kB,0B / 0B,32
+20250621_181713,a1bc8825008f,spark-worker-2,0.06%,280.8MiB / 10GiB,2.74%,6.06kB / 22.3kB,0B / 0B,32
+20250621_181713,7565f13518b7,spark-worker-1,0.05%,268.6MiB / 10GiB,2.62%,6.39kB / 22.3kB,0B / 0B,32
+20250621_181713,a255b20ab36b,spark-worker-3,0.05%,274.4MiB / 10GiB,2.68%,6.16kB / 21.2kB,0B / 0B,32
+20250621_181713,b876057eb262,spark-master,189.74%,444.1MiB / 4GiB,10.84%,112kB / 20.2kB,0B / 0B,53
