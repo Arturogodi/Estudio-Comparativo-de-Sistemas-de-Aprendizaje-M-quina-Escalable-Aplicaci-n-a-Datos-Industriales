@@ -1,4 +1,4 @@
-# TFG-Ray-vs-Spark
+# Estudio Comparativo de Sistemas de Aprendizaje Máquina Escalable: Aplicación a Datos Industriales
 
 ## Configuración Local
 
