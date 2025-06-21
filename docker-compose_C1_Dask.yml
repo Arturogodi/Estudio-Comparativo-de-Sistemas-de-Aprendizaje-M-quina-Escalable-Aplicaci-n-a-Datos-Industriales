@@ -1,0 +1,137 @@
+version: '3.8'
+
+services:
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile.dask
+    container_name: dask-scheduler
+    command: dask-scheduler
+    ports:
+      - "8786:8786"  # puerto para clientes
+      - "8787:8787"  # dashboard web
+    networks:
+      - dask-net
+    volumes:
+      - ./data:/workspace/data
+      - ./scripts:/workspace/scripts
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 4g
+    shm_size: '2gb'
+
+  worker-1:
+    build:
+      context: .
+      dockerfile: Dockerfile.dask
+    container_name: dask-worker-1
+    depends_on:
+      - scheduler
+    command: dask-worker tcp://scheduler:8786
+    networks:
+      - dask-net
+    volumes:
+      - ./data:/workspace/data
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 10g
+    shm_size: '2gb'
+
+  worker-2:
+    build:
+      context: .
+      dockerfile: Dockerfile.dask
+    container_name: dask-worker-2
+    depends_on:
+      - scheduler
+    command: dask-worker tcp://scheduler:8786
+    networks:
+      - dask-net
+    volumes:
+      - ./data:/workspace/data
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 10g
+    shm_size: '2gb'
+
+  worker-3:
+    build:
+      context: .
+      dockerfile: Dockerfile.dask
+    container_name: dask-worker-3
+    depends_on:
+      - scheduler
+    command: dask-worker tcp://scheduler:8786
+    networks:
+      - dask-net
+    volumes:
+      - ./data:/workspace/data
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 10g
+    shm_size: '2gb'
+
+  worker-4:
+    build:
+      context: .
+      dockerfile: Dockerfile.dask
+    container_name: dask-worker-4
+    depends_on:
+      - scheduler
+    command: dask-worker tcp://scheduler:8786
+    networks:
+      - dask-net
+    volumes:
+      - ./data:/workspace/data
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 10g
+    shm_size: '2gb'
+
+  worker-5:
+    build:
+      context: .
+      dockerfile: Dockerfile.dask
+    container_name: dask-worker-5
+    depends_on:
+      - scheduler
+    command: dask-worker tcp://scheduler:8786
+    networks:
+      - dask-net
+    volumes:
+      - ./data:/workspace/data
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 10g
+    shm_size: '2gb'
+
+  notebook:
+    image: daskdev/dask-notebook
+    container_name: dask-notebook
+    ports:
+      - "8888:8888"
+    networks:
+      - dask-net
+    volumes:
+      - ./data:/home/jovyan/data
+      - ./scripts:/home/jovyan/scripts
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    depends_on:
+      - scheduler
+
+networks:
+  dask-net:
+    driver: bridge

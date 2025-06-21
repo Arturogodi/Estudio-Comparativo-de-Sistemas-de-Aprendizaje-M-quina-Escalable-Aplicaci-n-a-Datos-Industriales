@@ -1,0 +1,32 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'ray-head'
+    static_configs:
+      - targets: ['ray-head:8265']
+    metrics_path: '/metrics'
+
+  - job_name: 'ray-workers'
+    static_configs:
+      - targets:
+          - 'ray-worker-1:8265'
+          - 'ray-worker-2:8265'
+          - 'ray-worker-3:8265'
+          - 'ray-worker-4:8265'
+          - 'ray-worker-5:8265'
+    metrics_path: '/metrics'
+
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
+
+  - job_name: 'ray-client'
+    static_configs:
+      - targets: ['ray-client:10001']
+    metrics_path: '/metrics'
+
+  - job_name: 'ray-cluster'
+    static_configs:
+      - targets: ['ray-head:6379']
+    metrics_path: '/metrics'

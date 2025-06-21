@@ -1,0 +1,253 @@
+version: '3.8'
+
+services:
+  # ===========================
+  #       PROMETHEUS
+  # ===========================
+  prometheus:
+    image: prom/prometheus:v2.47.2
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus_v1.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    networks:
+      - cluster-net
+    restart: always
+    shm_size: '2gb'
+
+  # ===========================
+  #       GRAFANA
+  # ===========================
+  grafana:
+    image: grafana/grafana:9.4.3
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning
+    networks:
+      - cluster-net
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2g
+    shm_size: '2gb'
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
+
+  # ===========================
+  #       CADVISOR
+  # ===========================
+  cadvisor:
+    image: google/cadvisor:v0.46.0
+    container_name: cadvisor
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    ports:
+      - "8080:8080"
+    networks:
+      - cluster-net
+    restart: always
+
+  # ===========================
+  #       NODE EXPORTER
+  # ===========================
+  node-exporter:
+    image: prom/node-exporter:v1.6.1
+    container_name: node-exporter
+    ports:
+      - "9100:9100"
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    networks:
+      - cluster-net
+    restart: always
+    security_opt:
+      - no-new-privileges:true
+    sysctls:
+      - kernel.perf_event_paranoid=-1
+
+  # ===========================
+  #       RAY SERVICES
+  # ===========================
+  ray-head:
+    build:
+      context: .
+      dockerfile: Dockerfile.ray-2.22.0-py3.9.13
+    container_name: ray-head
+    command: >
+      bash -c "
+        ray start --head --port=6379 --dashboard-host 0.0.0.0 --dashboard-port=8265 --ray-client-server-port=10001 --resources='{\"head\": 1}' &&
+        tail -f /dev/null
+      "
+    ports:
+      - "8265:8265"   # Dashboard web
+      - "6379:6379"   # Redis
+      - "10001:10001" # Ray Client
+    networks:
+      - cluster-net
+    volumes:
+      - ./data:/data
+      - ./scripts:/scripts
+      - ./helpers:/helpers
+      - ./logs:/logs
+      - ./configs:/configs
+    mem_limit: 3g
+    shm_size: '2gb'
+
+  ray-client:
+    build:
+      context: .
+      dockerfile: Dockerfile.ray-2.22.0-py3.9.13
+    container_name: ray-client
+    depends_on:
+      - ray-head
+    command: >
+      bash -c "
+        ray start --address=ray-head:6379 --num-cpus=0 &&
+        tail -f /dev/null
+      "
+    networks:
+      - cluster-net
+    volumes:
+      - ./data:/data
+      - ./scripts:/scripts
+      - ./helpers:/helpers
+      - ./logs:/logs
+      - ./configs:/configs
+    mem_limit: 1g
+    shm_size: '1gb'
+
+  ray-worker-1:
+    build:
+      context: .
+      dockerfile: Dockerfile.ray-2.22.0-py3.9.13
+    container_name: ray-worker-1
+    depends_on:
+      - ray-head
+    command: >
+      bash -c "
+        ray start --address=ray-head:6379 &&
+        tail -f /dev/null
+      "
+    networks:
+      - cluster-net
+    volumes:
+      - ./data:/data
+      - ./scripts:/scripts
+      - ./helpers:/helpers
+      - ./logs:/logs
+      - ./configs:/configs
+    mem_limit: 10g
+    shm_size: '2gb'
+
+  ray-worker-2:
+    build:
+      context: .
+      dockerfile: Dockerfile.ray-2.22.0-py3.9.13
+    container_name: ray-worker-2
+    depends_on:
+      - ray-head
+    command: >
+      bash -c "
+        ray start --address=ray-head:6379 &&
+        tail -f /dev/null
+      "
+    networks:
+      - cluster-net
+    volumes:
+      - ./data:/data
+      - ./scripts:/scripts
+      - ./helpers:/helpers
+      - ./logs:/logs
+      - ./configs:/configs
+    mem_limit: 10g
+    shm_size: '2gb'
+
+  ray-worker-3:
+    build:
+      context: .
+      dockerfile: Dockerfile.ray-2.22.0-py3.9.13
+    container_name: ray-worker-3
+    depends_on:
+      - ray-head
+    command: >
+      bash -c "
+        ray start --address=ray-head:6379 &&
+        tail -f /dev/null
+      "
+    networks:
+      - cluster-net
+    volumes:
+      - ./data:/data
+      - ./scripts:/scripts
+      - ./helpers:/helpers
+      - ./logs:/logs
+      - ./configs:/configs
+    mem_limit: 10g
+    shm_size: '2gb'
+
+  ray-worker-4:
+    build:
+      context: .
+      dockerfile: Dockerfile.ray-2.22.0-py3.9.13
+    container_name: ray-worker-4
+    depends_on:
+      - ray-head
+    command: >
+      bash -c "
+        ray start --address=ray-head:6379 &&
+        tail -f /dev/null
+      "
+    networks:
+      - cluster-net
+    volumes:
+      - ./data:/data
+      - ./scripts:/scripts
+      - ./helpers:/helpers
+      - ./logs:/logs
+      - ./configs:/configs
+    mem_limit: 10g
+    shm_size: '2gb'
+
+  ray-worker-5:
+    build:
+      context: .
+      dockerfile: Dockerfile.ray-2.22.0-py3.9.13
+    container_name: ray-worker-5
+    depends_on:
+      - ray-head
+    command: >
+      bash -c "
+        ray start --address=ray-head:6379 &&
+        tail -f /dev/null
+      "
+    networks:
+      - cluster-net
+    volumes:
+      - ./data:/data
+      - ./scripts:/scripts
+      - ./helpers:/helpers
+      - ./logs:/logs
+      - ./configs:/configs
+    mem_limit: 10g
+    shm_size: '2gb'
+
+networks:
+  cluster-net:
+    driver: bridge
+
+volumes:
+  grafana_data:
+  prometheus_data:
