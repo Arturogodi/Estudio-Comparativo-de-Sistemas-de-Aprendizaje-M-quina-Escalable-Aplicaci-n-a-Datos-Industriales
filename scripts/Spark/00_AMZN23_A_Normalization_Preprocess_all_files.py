@@ -1,72 +1,71 @@
+import sys
 import os
-import time
 import json
+import time
 from datetime import datetime
-import ray
-from ray.data import read_parquet
-from ray.data.dataset import Dataset
-from typing import Dict, Any
-from ray.data.block import BlockAccessor
-from ray.util.annotations import DeveloperAPI
-
-# Utilidades ya definidas (si están en helpers.ray_utils.py)
-from template_ray import create_ray_context, measure_time_with_run_id_ray
-
-def normalize_record(row: Dict[str, Any]) -> Dict[str, Any]:
-    try:
-        # Normalización de arrays
-        for key in ['features', 'description', 'categories']:
-            if key in row and isinstance(row[key], list):
-                row[f"{key}_length"] = len(row[key])
-                row[f"{key}_as_list"] = row[key]
-
-        # Campos específicos de 'images'
-        if "images" in row and isinstance(row["images"], dict):
-            for img_type in ["hi_res", "large", "thumb", "variant"]:
-                val = row["images"].get(img_type)
-                row[f"images_{img_type}_url"] = val[0] if isinstance(val, list) and val else None
-
-        # Campos específicos de 'videos'
-        if "videos" in row and isinstance(row["videos"], dict):
-            for vfield in ["title", "url", "user_id"]:
-                val = row["videos"].get(vfield)
-                row[f"videos_{vfield}"] = val[0] if isinstance(val, list) and val else None
-
-        # Normalización de 'details'
-        if "details" in row and isinstance(row["details"], str):
-            parsed = json.loads(row["details"])
-            for field in ["Publisher", "Language", "Hardcover", "ISBN 10", "ISBN 13", "Item Weight", "Dimensions"]:
-                key = field.lower().replace(" ", "_")
-                row[f"details_{key}_exists"] = field in parsed
-                row[f"details_{key}_value"] = parsed.get(field)
-            del row["details"]
-
-        return row
-
-    except Exception as e:
-        row["error"] = f"Failed normalization: {str(e)}"
-        return row
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import size, from_json
+from pyspark.sql.types import StringType, MapType
+from template import write_state, clear_state, measure_time, create_spark_session
 
 
-def normalize_dataset_ray(input_path: str, output_path: str, script_name: str) -> Dataset:
+def normalize_column(df, col_name):
+    col_type = df.schema[col_name].dataType.typeName()
+    if col_type == 'array':
+        df = df.withColumn(f'{col_name}_length', size(df[col_name]))
+        df = df.withColumn(f'{col_name}_as_list', df[col_name])
+    elif col_type == 'struct':
+        if col_name == 'images':
+            df = df.withColumn('images_hi_res_url', df['images']['hi_res'][0])
+            df = df.withColumn('images_large_url', df['images']['large'][0])
+            df = df.withColumn('images_thumb_url', df['images']['thumb'][0])
+            df = df.withColumn('images_variant', df['images']['variant'][0])
+        elif col_name == 'videos':
+            df = df.withColumn('videos_title', df['videos']['title'][0])
+            df = df.withColumn('videos_url', df['videos']['url'][0])
+            df = df.withColumn('videos_user_id', df['videos']['user_id'][0])
+    return df
+
+
+def normalize_dataset(spark, input_path: str, output_path: str, script_name: str):
     def execute():
-        print(f"[i] Leyendo: {input_path}")
-        ds = read_parquet(input_path)
+        df = spark.read.parquet(input_path)
 
-        print(f"[i] Normalizando columnas...")
-        ds = ds.map(normalize_record)
+        # Renombrar columnas con espacios
+        rename_dict = {c: c.replace(' ', '_') for c in df.columns if ' ' in c}
+        for old_name, new_name in rename_dict.items():
+            df = df.withColumnRenamed(old_name, new_name)
 
-        print(f"[✓] Escribiendo en: {output_path}")
+        for col_name in df.columns:
+            df = normalize_column(df, col_name)
+
+        # Normalizar columnas específicas
+        if 'categories' in df.columns:
+            df = df.withColumn('categories_length', size(df['categories']))
+            df = df.withColumn('categories_as_list', df['categories'])
+
+        if 'details' in df.columns:
+            df = df.withColumn('details_json', from_json('details', MapType(StringType(), StringType())))
+            fields = ['Publisher', 'Language', 'Hardcover', 'ISBN 10', 'ISBN 13', 'Item Weight', 'Dimensions']
+            for field in fields:
+                key = field.lower().replace(" ", "_")
+                df = df.withColumn(f'details_{key}_exists', df['details_json'][field].isNotNull())
+                df = df.withColumn(f'details_{key}_value', df['details_json'][field])
+
+        df = df.drop(*[c for c in ['details', 'details_json'] if c in df.columns])
+
+        # Guardar resultado
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
-        ds.write_parquet(output_path)
-        return ds
+        df.write.mode("overwrite").parquet(output_path)
+        return df
 
-    return measure_time_with_run_id_ray("Normalize Dataset", input_path, execute, output_path=output_path, script_name=script_name, log_output=True)
+    return measure_time("Normalize Dataset", input_path, execute, output_path=output_path, script_name=script_name, log_output=True)
+
 
 def main():
     script_name = os.path.splitext(os.path.basename(__file__))[0]
-    create_ray_context()
-    total_start = time.time()
+    spark = create_spark_session()
+    total_start = time.time()  # Inicia temporizador total
 
     files = [
         "meta_Books.parquet",
@@ -79,12 +78,17 @@ def main():
     for file in files:
         input_path = f"/data/bronze/amazon2023/{file}"
         output_path = f"/data/silver/amazon2023/{file.replace('.parquet', '_normalized.parquet')}"
-        normalize_dataset_ray(input_path, output_path, script_name)
+        normalize_dataset(spark, input_path, output_path, script_name=script_name)
 
+    spark.stop()
+
+    # Calcula y guarda tiempo total
     total_duration = time.time() - total_start
     report_path = os.path.join("data/report", script_name, f"{script_name}_report.md")
     with open(report_path, "a", encoding="utf-8") as f:
         f.write(f"\n## Tiempo total del script\n- {total_duration:.2f} segundos\n")
+
+
 
 if __name__ == "__main__":
     main()
