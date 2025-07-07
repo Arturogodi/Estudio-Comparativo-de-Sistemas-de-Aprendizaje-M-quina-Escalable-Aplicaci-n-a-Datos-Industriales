@@ -1,0 +1,13 @@
+timestamp,container_id,name,cpu_perc,mem_usage,mem_perc,net_io,block_io,pids
+20250622_191348,89b8dcbf9be3,spark-worker-4,172.18%,488.8MiB / 10GiB,4.77%,18.7kB / 47.5kB,0B / 0B,63
+20250622_191348,e89cbf4842ec,spark-worker-5,174.60%,549.6MiB / 10GiB,5.37%,18.7kB / 47.5kB,0B / 0B,63
+20250622_191348,a1bc8825008f,spark-worker-2,164.56%,514.7MiB / 10GiB,5.03%,18.8kB / 47.6kB,0B / 0B,63
+20250622_191348,7565f13518b7,spark-worker-1,149.29%,563.3MiB / 10GiB,5.50%,18.8kB / 47.6kB,0B / 0B,63
+20250622_191348,a255b20ab36b,spark-worker-3,172.34%,560.7MiB / 10GiB,5.48%,18.9kB / 47.6kB,0B / 0B,63
+20250622_191348,b876057eb262,spark-master,42.37%,658.4MiB / 4GiB,16.07%,273kB / 684kB,0B / 0B,105
+20250622_191355,89b8dcbf9be3,spark-worker-4,198.27%,576.3MiB / 10GiB,5.63%,95.5kB / 59.6kB,0B / 0B,76
+20250622_191355,e89cbf4842ec,spark-worker-5,187.84%,649.2MiB / 10GiB,6.34%,95.8kB / 59.8kB,0B / 0B,77
+20250622_191355,a1bc8825008f,spark-worker-2,194.33%,631.6MiB / 10GiB,6.17%,96.9kB / 96.4kB,0B / 0B,77
+20250622_191355,7565f13518b7,spark-worker-1,194.46%,679.1MiB / 10GiB,6.63%,95.6kB / 59.8kB,0B / 0B,77
+20250622_191355,a255b20ab36b,spark-worker-3,176.70%,713.5MiB / 10GiB,6.97%,164kB / 180kB,0B / 0B,79
+20250622_191355,b876057eb262,spark-master,9.68%,777.2MiB / 4GiB,18.98%,344kB / 989kB,0B / 0B,124

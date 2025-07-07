@@ -1,1 +1,1 @@
-{"current_operation": "idle", "start_time": null}
+{"current_operation": "Ray Read Filter Write", "start_time": "20250622_234514", "input_file": "amzn23_model_data.parquet", "run_id": 10}

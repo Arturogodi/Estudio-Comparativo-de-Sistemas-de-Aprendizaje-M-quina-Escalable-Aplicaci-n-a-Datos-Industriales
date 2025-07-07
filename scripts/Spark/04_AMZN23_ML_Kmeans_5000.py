@@ -7,7 +7,7 @@ from pyspark.sql.functions import col, rand
 from pyspark.sql.types import NumericType
 from pyspark import StorageLevel
 
-from template_spark import (
+from template import (
     create_spark_session,
     measure_time_with_run_id,
     redirect_output,

@@ -35,5 +35,3 @@
 - Tamaño salida: 0.00 GB
 - Tiempo: 13.95 s
 
-
-

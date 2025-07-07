@@ -12,6 +12,19 @@
 !Dockerfile.ray-2.22.0-py3.9.13
 !Dockerfile.spark-3.5.5-py3.9.13
 !Dockerfile.dask
+
+/data/bronze/**
+!/data/bronze/
+
+/data/silver/**
+!/data/silver/
+
+/data/gold/**
+!/data/gold/
+!/data/gold/amazon2023/
+!/data/gold/amazon2023/amzn23_model_data.parquet
+
+!data/images/** 
 # Excluye archivos temporales
 __pycache__/
 *.py[cod]
